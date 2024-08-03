@@ -21,6 +21,24 @@ body {
     font-size: 1.5rem;
 }
 
+@media (max-width: 600px) { 
+    .list-wrapper {
+        width: auto;
+        margin-inline: 15px;
+        min-height: 90vh;
+    }
+    .input-wrapper {
+        width: 85%;
+        margin-inline: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .input-wrapper label {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 .list-title {
     text-align: center;
     padding-block: 40px;
@@ -150,4 +168,12 @@ body {
     height: 10px;
     background: no-repeat url(images/underline.png) center/cover;
     z-index: 0;
+}
+
+tr input {
+        background-color: transparent;
+        border: none;
+}
+tr input:focus {
+        outline: none;
 }
