@@ -62,6 +62,7 @@ function checkEntryDone() {
 
 function redactEntry() {
   let input = document.createElement(`input`);
+  input.value = `${this.parentElement.firstElementChild.textContent}`;
 
   input.addEventListener(`blur`, () => {
     let td = document.createElement(`td`);
